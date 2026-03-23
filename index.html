@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A System of Memory and Presence</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="hero">
+        <p class="eyebrow">Google AI + Human Curation</p>
+        <h1>A System of Memory and Presence</h1>
+        <p class="subtitle">
+          An interactive memory system inspired by my Unity game about love,
+          loss, and quiet acts of care.
+        </p>
+      </section>
+
+      <section class="artifact">
+        <div class="stage" id="stage">
+          <button class="obj obj-flower" data-key="flower" type="button">
+            <img src="assets/Flower.png" alt="" class="obj-icon" />
+            <span>Flower</span>
+          </button>
+
+          <button class="obj obj-pan" data-key="pan" type="button">
+            <img src="assets/Pan.png" alt="" class="obj-icon" />
+            <span>Pan</span>
+          </button>
+
+          <button class="obj obj-teddy" data-key="teddy" type="button">
+            <img src="assets/Teddy.png" alt="" class="obj-icon" />
+            <span>Teddy</span>
+          </button>
+
+          <button class="obj obj-cat" data-key="cat" type="button">
+            <img src="assets/Cat.png" alt="" class="obj-icon" />
+            <span>Cat</span>
+          </button>
+        </div>
+
+        <aside class="panel">
+          <p class="panel-label">Memory Fragment</p>
+          <h2 id="memoryTitle">Choose an object</h2>
+          <p id="memoryText" class="memory-text">
+            Each object holds a small trace of care, absence, or repetition.
+          </p>
+          <div class="meta">
+            <span id="memoryTag">inactive</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="footer-note">
+        <p>
+          Built with Google AI-generated text, then rewritten and coded into an
+          interactive artifact.
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
