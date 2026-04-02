@@ -27,9 +27,17 @@ const memoryText = document.getElementById("memoryText");
 const memoryTag = document.getElementById("memoryTag");
 const objects = document.querySelectorAll(".obj");
 
+const stage = document.getElementById("stage");
+
 function setMemory(key) {
   const item = memories[key];
   if (!item) return;
+
+  stage.classList.add("active-glow");
+
+  setTimeout(() => {
+    stage.classList.remove("active-glow");
+  }, 400);
 
   objects.forEach((obj) => {
     obj.classList.toggle("active", obj.dataset.key === key);
